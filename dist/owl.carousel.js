@@ -9,7 +9,13 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
-;(function($, window, document, undefined) {
+
+
+
+$ = window.jquery;
+(function ( $ ) {
+
+
 
   /**
    * Creates a carousel.
@@ -1651,7 +1657,7 @@
    */
   $.fn.owlCarousel.Constructor = Owl;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * AutoRefresh Plugin
@@ -1659,7 +1665,7 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
 
   /**
    * Creates the auto refresh plugin.
@@ -1762,7 +1768,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.AutoRefresh = AutoRefresh;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Lazy Plugin
@@ -1770,7 +1776,7 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
 
   /**
    * Creates the lazy plugin.
@@ -1897,7 +1903,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.Lazy = Lazy;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * AutoHeight Plugin
@@ -1905,7 +1911,7 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
 
   /**
    * Creates the auto height plugin.
@@ -1982,7 +1988,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.AutoHeight = AutoHeight;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Video Plugin
@@ -1990,7 +1996,7 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ){
 
   /**
    * Creates the video plugin.
@@ -2263,7 +2269,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.Video = Video;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Animate Plugin
@@ -2271,7 +2277,7 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ){
 
   /**
    * Creates the animate plugin.
@@ -2384,7 +2390,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.Animate = Animate;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Autoplay Plugin
@@ -2393,7 +2399,7 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ){
 
   /**
    * Creates the autoplay plugin.
@@ -2546,7 +2552,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.autoplay = Autoplay;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Navigation Plugin
@@ -2554,7 +2560,7 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
   'use strict';
 
   /**
@@ -2928,7 +2934,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.Navigation = Navigation;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Hash Plugin
@@ -2936,7 +2942,7 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
   'use strict';
 
   /**
@@ -3050,7 +3056,7 @@
 
   $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
 
 /**
  * Support Plugin
@@ -3060,7 +3066,7 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+(function ( $ ) {
 
   var style = $('<support>').get(0).style,
     prefixes = 'Webkit Moz O ms'.split(' '),
@@ -3133,4 +3139,4 @@
     $.support.transform3d = tests.csstransforms3d();
   }
 
-})(window.Zepto || window.jQuery, window, document);
+}( jQuery ));
